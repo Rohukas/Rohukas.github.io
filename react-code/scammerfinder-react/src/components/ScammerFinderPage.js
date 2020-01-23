@@ -62,13 +62,14 @@ function ScammerFinderPage(props) {
     // Remove non alphanumeric chars
     clean = clean.replace(/[^a-zA-Z0-9]/g, "");
     clean = clean.replace("I", "1").replace("O", "0");
-    console.log("clean: " + clean);
-    let matches = /\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*/.exec(
-      clean
-    );
+    // let matches = /\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*/.exec(
+    //   clean
+    // );
+    let matches = /\d{9,11}/.exec(clean);
     if (matches != null && matches.length > 0) {
       return matches[0];
     }
+    console.log("No match: " + str);
     return null;
   };
   const diff = (timestamp1, timestamp2) => {
@@ -125,10 +126,8 @@ function ScammerFinderPage(props) {
         let items_with_phone_nr = resJson.data.children.filter(item =>
           FindNumber(item.data.title)
         );
-        console.log("itetms: " + JSON.stringify(items_with_phone_nr));
         let displayItems = items_with_phone_nr.map(item => {
           let age = diff(new Date().getTime(), item.data.created_utc * 1000);
-          console.log(age);
           if (age > 60) {
             age = Math.round(age / 60) + " hours";
           } else {
