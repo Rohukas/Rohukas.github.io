@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/scamfinder/precache-manifest.eb4ea2c2558c1c9b91e6217d0623fdad.js"
+  "/scamfinder/precache-manifest.f7f68717354ce54c89ef3d24c86ddcaf.js"
 );
 
 self.addEventListener('message', (event) => {

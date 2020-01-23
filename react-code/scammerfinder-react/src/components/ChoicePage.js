@@ -72,7 +72,7 @@ function ChoicePage(props) {
               icon="search"
               onClick={() => {
                 history.push(
-                  "/find?timeFrame=" +
+                  "/scamfinder/find?timeFrame=" +
                     state.timeFrame +
                     "&sortBy=" +
                     state.sortBy +
