@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/scamfinder/static/css/main.d1b05096.chunk.css",
-    "main.js": "/scamfinder/static/js/main.272dd436.chunk.js",
-    "main.js.map": "/scamfinder/static/js/main.272dd436.chunk.js.map",
+    "main.js": "/scamfinder/static/js/main.3bb0fa85.chunk.js",
+    "main.js.map": "/scamfinder/static/js/main.3bb0fa85.chunk.js.map",
     "runtime-main.js": "/scamfinder/static/js/runtime-main.27d2b83a.js",
     "runtime-main.js.map": "/scamfinder/static/js/runtime-main.27d2b83a.js.map",
     "static/css/2.ff8bd605.chunk.css": "/scamfinder/static/css/2.ff8bd605.chunk.css",
     "static/js/2.821cfde7.chunk.js": "/scamfinder/static/js/2.821cfde7.chunk.js",
     "static/js/2.821cfde7.chunk.js.map": "/scamfinder/static/js/2.821cfde7.chunk.js.map",
     "index.html": "/scamfinder/index.html",
-    "precache-manifest.c56eae9c6f24844fcf1206417227ea1e.js": "/scamfinder/precache-manifest.c56eae9c6f24844fcf1206417227ea1e.js",
+    "precache-manifest.6b1b14bb1dc3e382c44c3b14c8dc7e35.js": "/scamfinder/precache-manifest.6b1b14bb1dc3e382c44c3b14c8dc7e35.js",
     "service-worker.js": "/scamfinder/service-worker.js",
     "static/css/2.ff8bd605.chunk.css.map": "/scamfinder/static/css/2.ff8bd605.chunk.css.map",
     "static/css/main.d1b05096.chunk.css.map": "/scamfinder/static/css/main.d1b05096.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.ff8bd605.chunk.css",
     "static/js/2.821cfde7.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.272dd436.chunk.js"
+    "static/js/main.3bb0fa85.chunk.js"
   ]
 }
