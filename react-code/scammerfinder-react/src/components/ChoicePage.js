@@ -72,7 +72,8 @@ function ChoicePage(props) {
               icon="search"
               onClick={() => {
                 history.push(
-                  "/scamfinder/find?timeFrame=" +
+                  process.env.PUBLIC_URL +
+                    "/find?timeFrame=" +
                     state.timeFrame +
                     "&sortBy=" +
                     state.sortBy +

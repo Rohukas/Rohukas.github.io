@@ -131,7 +131,7 @@ function ScammerFinderPage(props) {
               <Button
                 key="buy"
                 onClick={() => {
-                  history.push("/");
+                  history.push(process.env.PUBLIC_URL + "/");
                 }}
               >
                 Go back
