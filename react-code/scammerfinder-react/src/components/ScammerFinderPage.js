@@ -5,7 +5,7 @@ import StackGrid from "react-stack-grid";
 import ScammerNumberItem from "./ScammerNumberItem";
 import { utc } from "moment";
 import { useHistory } from "react-router-dom";
-
+import { blue } from "@ant-design/colors";
 import {
   Skeleton,
   Row,
@@ -14,9 +14,18 @@ import {
   Result,
   Icon,
   Typography,
-  Button
+  Button,
+  PageHeader
 } from "antd";
+
 import queryString from "query-string";
+const style = {
+  width: "350px",
+  height: "200px",
+  border: "solid 1px #555",
+  backgroundColor: "#eed",
+  boxShadow: "10px -10px  rgba(0,0,0,0.6)"
+};
 function ScammerFinderPage(props) {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -72,6 +81,12 @@ function ScammerFinderPage(props) {
     let timeFrame = params["timeFrame"];
     timeFrame = timeFrame == null ? "day" : timeFrame;
 
+    let count = params["count"];
+    count = count == null ? 125 : count;
+
+    let showAll = params["showAll"];
+    showAll = showAll == null ? true : showAll === "true";
+
     fetch(
       "https://jsonp.afeld.me/?url=" +
         encodeURIComponent(
@@ -105,20 +120,47 @@ function ScammerFinderPage(props) {
             number: FindNumber(item.data.title)
           };
         });
+
+        // Filter out numbers if needed
+        if (!showAll) {
+          let tempList = [];
+          for (const scammer of displayItems) {
+            // Check if already in list
+            let alreadyInList = false;
+            for (const s of tempList) {
+              if (s.number == scammer.number) {
+                alreadyInList = true;
+              }
+            }
+            if (!alreadyInList) {
+              tempList.push(scammer);
+            }
+          }
+          displayItems = tempList;
+        }
+
         setItems(displayItems);
         setLoading(false);
       });
   }, []);
   return (
     <div>
-      {/* <div style={{ background: "#ECECEC", padding: "30px" }}> */}
       <Skeleton loading={loading} active>
+        <PageHeader
+          style={{ backgroundColor: blue.primary }}
+          onBack={() => history.push("/")}
+          title="Menu"
+          subTitle="Go back to menu"
+        />
         {!loading && items.length == 0 ? (
           <Result
             status="error"
-            title="No results found"
-            subTitle="Try a different set of parameters.."
+            // title="No results found"
+            // subTitle="Try a different set of parameters.."
+            style={{ textAlign: "center" }}
             extra={[
+              <h1 style={{ color: "white" }}>No results were found.</h1>,
+              <p>Try a different set of parameters.</p>,
               <Button
                 type="primary"
                 key="console"
@@ -141,13 +183,27 @@ function ScammerFinderPage(props) {
         ) : (
           <div></div>
         )}
-        <Row gutter={16}>
+        <Row
+          gutter={16}
+          style={{
+            marginLeft: 20,
+            marginRight: 20,
+            marginTop: 30,
+            marginBottom: 30
+          }}
+        >
           {items.map(item => (
             <Col style={{ paddingBottom: "20px" }} span={8}>
               <Card
                 title={item.title}
                 // extra={<a href="#">Link to reddit</a>}
                 //style={{ width: window.innerWidth / 3 }}
+                style={{
+                  border: "solid 1px #555",
+                  backgroundColor: "#eed",
+                  boxShadow: "10px -10px  rgba(0,0,0,0.6)",
+                  paddingRight: 20
+                }}
               >
                 <p>Age: {item.age}</p>
                 <p>Parsed number: {item.number}</p>
@@ -157,7 +213,7 @@ function ScammerFinderPage(props) {
                     Open post
                   </a>
                 </p>
-              </Card>{" "}
+              </Card>
             </Col>
           ))}
         </Row>
