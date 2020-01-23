@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "29d7ac6875606f6eb11481d9413b755d",
+    "revision": "b93d991736d886d243b01afcd44a0d09",
     "url": "/scamfinder/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scamfinder/static/css/2.ff8bd605.chunk.css"
   },
   {
-    "revision": "e283e325ae989267d9cc",
+    "revision": "8402275960317fcdf841",
     "url": "/scamfinder/static/css/main.d1b05096.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scamfinder/static/js/2.821cfde7.chunk.js.LICENSE"
   },
   {
-    "revision": "e283e325ae989267d9cc",
-    "url": "/scamfinder/static/js/main.a4674397.chunk.js"
+    "revision": "8402275960317fcdf841",
+    "url": "/scamfinder/static/js/main.272dd436.chunk.js"
   },
   {
     "revision": "fbe90f24b5a6d894378e",

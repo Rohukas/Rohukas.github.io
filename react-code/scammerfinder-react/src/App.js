@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import ChoicePage from "./components/ChoicePage";
 function App() {
   return (
-    <Router>
+    <Router basename="/scamfinder">
       <Route exact path="/" component={ChoicePage}></Route>
       <Route exact path="/find" component={ScammerFinderPage}></Route>
     </Router>
