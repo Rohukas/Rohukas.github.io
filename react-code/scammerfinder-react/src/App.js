@@ -9,7 +9,7 @@ function App() {
   return (
     <Router basename="/scamfinder">
       <Route exact path="/" component={ChoicePage}></Route>
-      <Route path="/find" component={ScammerFinderPage}></Route>
+      <Route path="/scamfinder/find" component={ScammerFinderPage}></Route>
     </Router>
   );
 }
