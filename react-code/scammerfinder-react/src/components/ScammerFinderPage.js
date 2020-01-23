@@ -223,6 +223,27 @@ function ScammerFinderPage(props) {
                 >
                   Copy number
                 </Button>
+                <br />
+                <Button
+                  type="primary"
+                  style={{ marginTop: 5 }}
+                  onClick={() => {
+                    navigator.clipboard.writeText(
+                      "Title: " +
+                        item.title +
+                        "\nAge: " +
+                        item.age +
+                        "\nNumber: " +
+                        item.number +
+                        "\nLink: " +
+                        item.link +
+                        "\n\n[Number found with Dalfins ScamFinder-Reddit https://rohukas.github.io/scamfinder/]"
+                    );
+                    message.info("Copied information to clipboard!");
+                  }}
+                >
+                  Copy all information
+                </Button>
               </Card>
             </Col>
           ))}
