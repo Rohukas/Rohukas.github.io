@@ -72,8 +72,7 @@ function ChoicePage(props) {
               icon="search"
               onClick={() => {
                 history.push(
-                  process.env.PUBLIC_URL +
-                    "/find?timeFrame=" +
+                  "/find?timeFrame=" +
                     state.timeFrame +
                     "&sortBy=" +
                     state.sortBy +
