@@ -15,7 +15,8 @@ import {
   Icon,
   Typography,
   Button,
-  PageHeader
+  PageHeader,
+  message
 } from "antd";
 
 import queryString from "query-string";
@@ -213,6 +214,15 @@ function ScammerFinderPage(props) {
                     Open post
                   </a>
                 </p>
+                <Button
+                  type="primary"
+                  onClick={() => {
+                    navigator.clipboard.writeText(item.number);
+                    message.info("Copied number to clipboard!");
+                  }}
+                >
+                  Copy number
+                </Button>
               </Card>
             </Col>
           ))}

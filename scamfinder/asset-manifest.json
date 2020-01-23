@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/scamfinder/static/css/main.d1b05096.chunk.css",
-    "main.js": "/scamfinder/static/js/main.3b50aba1.chunk.js",
-    "main.js.map": "/scamfinder/static/js/main.3b50aba1.chunk.js.map",
+    "main.js": "/scamfinder/static/js/main.a9a3eee7.chunk.js",
+    "main.js.map": "/scamfinder/static/js/main.a9a3eee7.chunk.js.map",
     "runtime-main.js": "/scamfinder/static/js/runtime-main.27d2b83a.js",
     "runtime-main.js.map": "/scamfinder/static/js/runtime-main.27d2b83a.js.map",
     "static/css/2.ff8bd605.chunk.css": "/scamfinder/static/css/2.ff8bd605.chunk.css",
-    "static/js/2.21d19ddb.chunk.js": "/scamfinder/static/js/2.21d19ddb.chunk.js",
-    "static/js/2.21d19ddb.chunk.js.map": "/scamfinder/static/js/2.21d19ddb.chunk.js.map",
+    "static/js/2.d4e0d28c.chunk.js": "/scamfinder/static/js/2.d4e0d28c.chunk.js",
+    "static/js/2.d4e0d28c.chunk.js.map": "/scamfinder/static/js/2.d4e0d28c.chunk.js.map",
     "index.html": "/scamfinder/index.html",
-    "precache-manifest.5117c06aaf3b39535941dfa8fbc3c6a4.js": "/scamfinder/precache-manifest.5117c06aaf3b39535941dfa8fbc3c6a4.js",
+    "precache-manifest.265590cc73feba0364ea18ce1fb37696.js": "/scamfinder/precache-manifest.265590cc73feba0364ea18ce1fb37696.js",
     "service-worker.js": "/scamfinder/service-worker.js",
     "static/css/2.ff8bd605.chunk.css.map": "/scamfinder/static/css/2.ff8bd605.chunk.css.map",
     "static/css/main.d1b05096.chunk.css.map": "/scamfinder/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.21d19ddb.chunk.js.LICENSE": "/scamfinder/static/js/2.21d19ddb.chunk.js.LICENSE",
+    "static/js/2.d4e0d28c.chunk.js.LICENSE": "/scamfinder/static/js/2.d4e0d28c.chunk.js.LICENSE",
     "static/media/logo.svg": "/scamfinder/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.27d2b83a.js",
     "static/css/2.ff8bd605.chunk.css",
-    "static/js/2.21d19ddb.chunk.js",
+    "static/js/2.d4e0d28c.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.3b50aba1.chunk.js"
+    "static/js/main.a9a3eee7.chunk.js"
   ]
 }
