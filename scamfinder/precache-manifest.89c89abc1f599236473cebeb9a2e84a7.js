@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7480bba1be0d172bc2867a15062db6c4",
+    "revision": "f7cbfed830dc1a3f335f7f0bf9a9aa84",
     "url": "/scamfinder/index.html"
   },
   {
