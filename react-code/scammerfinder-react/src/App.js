@@ -7,7 +7,7 @@ import { HashRouter as Router, Route } from "react-router-dom";
 import ChoicePage from "./components/ChoicePage";
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Route exact path={"/"} component={ChoicePage}></Route>
       <Route path={"/find"} component={ScammerFinderPage}></Route>
     </Router>
