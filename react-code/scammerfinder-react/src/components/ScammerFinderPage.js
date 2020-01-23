@@ -16,7 +16,8 @@ import {
   Typography,
   Button,
   PageHeader,
-  message
+  message,
+  Spin
 } from "antd";
 
 import queryString from "query-string";
@@ -37,11 +38,31 @@ function ScammerFinderPage(props) {
     // This I would be replaced with a 1 later on and cause the number to become invalid.
     // Look for these sorts of situations and remove them!
     var clean = str.replace(/[a-zA-Z] [IO] [a-zA-Z]/g, "");
+
+    // Remove dates that have the format mm(/ or .)dd(/ or .)yyyy
+    clean = clean.replace(
+      /(?<=\D)[0-1][0-9][\/.][0-9]{1,2}[\/.][2][0]\d\d/g,
+      ""
+    );
+    // Remove dates that have the format yy(/ or .)mm(/ or .)dd
+    clean = clean.replace(
+      /(?<=\D)[2][0]\d\d[\/.][0-3][0-9][\/.][0-9]{1,2}/g,
+      ""
+    );
+    //Remove 24/7 and 24 Hour texts
+    clean = clean.replace(/(?<=[a-zA-Z]{2,}) \d\d..(?=[a-zA-Z ]){2,}/g, "");
+
+    // Remove 24 hour texts that are in the beginning
+    clean = clean.replace(/^\d\d..(?=[a-zA-Z ]){2,}/g, "");
+
+    // Remove dates that have the format dd(/ or .)mm(/ or .)yyyy
+
     //  Filter out words that have more than 3 consequent characters
     clean = clean.replace(/(?:[a-zA-Z]{3,}|[\$\@()+.])+/g, "");
     // Remove non alphanumeric chars
     clean = clean.replace(/[^a-zA-Z0-9]/g, "");
     clean = clean.replace("I", "1").replace("O", "0");
+    console.log("clean: " + clean);
     let matches = /\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*/.exec(
       clean
     );
@@ -184,6 +205,13 @@ function ScammerFinderPage(props) {
         ) : (
           <div></div>
         )}
+
+        {/* {loading ? (
+        <Spin style={{ textAlign: "center" }} tip="Loading..."></Spin>
+      ) : (
+        <div></div>
+      )} */}
+
         <Row
           gutter={16}
           style={{
@@ -244,6 +272,16 @@ function ScammerFinderPage(props) {
                 >
                   Copy all information
                 </Button>
+                {/* <br /> */}
+                {/* <Button
+                  type="danger"
+                  style={{ marginTop: 5 }}
+                  onClick={() => {
+                    window.open("https://reddit.com/report", "_blank");
+                  }}
+                >
+                  Report in reddit
+                </Button> */}
               </Card>
             </Col>
           ))}

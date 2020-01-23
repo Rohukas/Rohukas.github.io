@@ -92,7 +92,7 @@ function ChoicePage(props) {
             <InputNumber
               min={25}
               max={500}
-              defaultValue="50"
+              defaultValue="125"
               name="count"
               precision={0}
               onChange={countChanged}
