@@ -63,15 +63,24 @@ function ScammerFinderPage(props) {
     let params = queryString.parse(props.location.search);
     // https://www.reddit.com/r/all/search/.json?count=20&q=tech%20support&sort=new&t=hour
     // Homies over there allow us to make proper jsonp calls without building backend
+    let query = params["query"];
+    query = query == null ? "tech support" : query;
+
+    let sortBy = params["sortBy"];
+    sortBy = sortBy == null ? "new" : sortBy;
+
+    let timeFrame = params["timeFrame"];
+    timeFrame = timeFrame == null ? "day" : timeFrame;
+
     fetch(
       "https://jsonp.afeld.me/?url=" +
         encodeURIComponent(
           "https://www.reddit.com/r/all/search/.json?count=125&q=" +
-            params["query"] +
+            query +
             "&sort=" +
-            params["sortBy"] +
+            sortBy +
             "&t=" +
-            params["timeFrame"]
+            timeFrame
         )
     )
       .then(res => res.json())
