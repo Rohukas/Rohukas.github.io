@@ -55,8 +55,6 @@ function ScammerFinderPage(props) {
     // Remove 24 hour texts that are in the beginning
     clean = clean.replace(/^\d\d..(?=[a-zA-Z ]){2,}/g, "");
 
-    // Remove dates that have the format dd(/ or .)mm(/ or .)yyyy
-
     //  Filter out words that have more than 3 consequent characters
     clean = clean.replace(/(?:[a-zA-Z]{3,}|[\$\@()+.])+/g, "");
     // Remove non alphanumeric chars

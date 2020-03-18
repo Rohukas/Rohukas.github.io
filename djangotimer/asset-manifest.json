@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/djangotimer/static/css/main.5f361e03.chunk.css",
+    "main.js": "/djangotimer/static/js/main.84470c11.chunk.js",
+    "main.js.map": "/djangotimer/static/js/main.84470c11.chunk.js.map",
+    "runtime-main.js": "/djangotimer/static/js/runtime-main.fda09b24.js",
+    "runtime-main.js.map": "/djangotimer/static/js/runtime-main.fda09b24.js.map",
+    "static/js/2.44085af8.chunk.js": "/djangotimer/static/js/2.44085af8.chunk.js",
+    "static/js/2.44085af8.chunk.js.map": "/djangotimer/static/js/2.44085af8.chunk.js.map",
+    "index.html": "/djangotimer/index.html",
+    "precache-manifest.58185e1e106ca6cffeaecc01e2d2520e.js": "/djangotimer/precache-manifest.58185e1e106ca6cffeaecc01e2d2520e.js",
+    "service-worker.js": "/djangotimer/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/djangotimer/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.44085af8.chunk.js.LICENSE.txt": "/djangotimer/static/js/2.44085af8.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/djangotimer/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fda09b24.js",
+    "static/js/2.44085af8.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.84470c11.chunk.js"
+  ]
+}
