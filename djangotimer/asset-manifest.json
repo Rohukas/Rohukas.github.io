@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/djangotimer/static/css/main.5f361e03.chunk.css",
-    "main.js": "/djangotimer/static/js/main.84470c11.chunk.js",
-    "main.js.map": "/djangotimer/static/js/main.84470c11.chunk.js.map",
+    "main.js": "/djangotimer/static/js/main.7e9be0ad.chunk.js",
+    "main.js.map": "/djangotimer/static/js/main.7e9be0ad.chunk.js.map",
     "runtime-main.js": "/djangotimer/static/js/runtime-main.fda09b24.js",
     "runtime-main.js.map": "/djangotimer/static/js/runtime-main.fda09b24.js.map",
     "static/js/2.44085af8.chunk.js": "/djangotimer/static/js/2.44085af8.chunk.js",
     "static/js/2.44085af8.chunk.js.map": "/djangotimer/static/js/2.44085af8.chunk.js.map",
     "index.html": "/djangotimer/index.html",
-    "precache-manifest.58185e1e106ca6cffeaecc01e2d2520e.js": "/djangotimer/precache-manifest.58185e1e106ca6cffeaecc01e2d2520e.js",
+    "precache-manifest.865af090c5ecce66dcb7ba7118fb7d31.js": "/djangotimer/precache-manifest.865af090c5ecce66dcb7ba7118fb7d31.js",
     "service-worker.js": "/djangotimer/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/djangotimer/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.44085af8.chunk.js.LICENSE.txt": "/djangotimer/static/js/2.44085af8.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.fda09b24.js",
     "static/js/2.44085af8.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.84470c11.chunk.js"
+    "static/js/main.7e9be0ad.chunk.js"
   ]
 }
