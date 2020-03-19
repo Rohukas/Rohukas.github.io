@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/djangotimer/precache-manifest.865af090c5ecce66dcb7ba7118fb7d31.js"
+  "/djangotimer/precache-manifest.62b2c301b2e253821cc1f5c3c5ce4bd4.js"
 );
 
 self.addEventListener('message', (event) => {

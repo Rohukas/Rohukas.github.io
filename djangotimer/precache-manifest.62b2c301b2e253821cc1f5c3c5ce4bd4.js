@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "43c2d98888b93792a09b1cf1548b96d2",
+    "revision": "5bcce3f752100d837487a7f7159ecbbb",
     "url": "/djangotimer/index.html"
   },
   {
-    "revision": "66e3bd0fa8c1789bcb68",
+    "revision": "e26b4a483e0c9b4e52de",
     "url": "/djangotimer/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/djangotimer/static/js/2.44085af8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "66e3bd0fa8c1789bcb68",
-    "url": "/djangotimer/static/js/main.7e9be0ad.chunk.js"
+    "revision": "e26b4a483e0c9b4e52de",
+    "url": "/djangotimer/static/js/main.565be379.chunk.js"
   },
   {
     "revision": "0937682be97865428369",
