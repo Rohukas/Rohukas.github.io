@@ -38,7 +38,135 @@ function ScammerFinderPage(props) {
     // This I would be replaced with a 1 later on and cause the number to become invalid.
     // Look for these sorts of situations and remove them!
     var clean = str.replace(/[a-zA-Z] [IO] [a-zA-Z]/g, "");
-
+    let temp = "";
+    // Replace unicode shit
+    for (let c of clean) {
+      switch (c) {
+        case "𝟎":
+          temp += "0";
+          break;
+        case "𝟭":
+          temp += "1";
+          break;
+        case "𝟐":
+          temp += "2";
+          break;
+        case "𝟑":
+          temp += "3";
+          break;
+        case "𝟒":
+          temp += "4";
+          break;
+        case "𝟓":
+          temp += "5";
+          break;
+        case "𝟔":
+          temp += "6";
+          break;
+        case "𝟕":
+          temp += "7";
+          break;
+        case "𝟖":
+          temp += "8";
+          break;
+        case "𝟗":
+          temp += "9";
+          break;
+        case "𝟘":
+          temp += "0";
+          break;
+        case "𝟙":
+          temp += "1";
+          break;
+        case "𝟚":
+          temp += "2";
+          break;
+        case "𝟛":
+          temp += "3";
+          break;
+        case "𝟜":
+          temp += "4";
+          break;
+        case "𝟝":
+          temp += "5";
+          break;
+        case "𝟞":
+          temp += "6";
+          break;
+        case "𝟟":
+          temp += "7";
+          break;
+        case "𝟠":
+          temp += "8";
+          break;
+        case "𝟡":
+          temp += "9";
+          break;
+        case "𝟢":
+          temp += "0";
+          break;
+        case "𝟣":
+          temp += "1";
+          break;
+        case "𝟤":
+          temp += "2";
+          break;
+        case "𝟥":
+          temp += "3";
+          break;
+        case "𝟦":
+          temp += "4";
+          break;
+        case "𝟧":
+          temp += "5";
+          break;
+        case "𝟨":
+          temp += "6";
+          break;
+        case "𝟩":
+          temp += "7";
+          break;
+        case "𝟴":
+          temp += "8";
+          break;
+        case "𝟵":
+          temp += "9";
+          break;
+        case "𝟶":
+          temp += "0";
+          break;
+        case "𝟷":
+          temp += "1";
+          break;
+        case "𝟸":
+          temp += "2";
+          break;
+        case "𝟹":
+          temp += "3";
+          break;
+        case "𝟺":
+          temp += "4";
+          break;
+        case "𝟻":
+          temp += "5";
+          break;
+        case "𝟼":
+          temp += "6";
+          break;
+        case "𝟽":
+          temp += "7";
+          break;
+        case "𝟾":
+          temp += "8";
+          break;
+        case "𝟿":
+          temp += "9";
+          break;
+        default:
+          temp += c;
+      }
+    }
+    clean = temp;
     // Remove dates that have the format mm(/ or .)dd(/ or .)yyyy
     clean = clean.replace(
       /(?<=\D)[0-1][0-9][\/.][0-9]{1,2}[\/.][2][0]\d\d/g,
